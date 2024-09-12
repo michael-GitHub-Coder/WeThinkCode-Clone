@@ -23,11 +23,11 @@ const Contact = () => {
 
             <div className="flex justify-center">
               <form>
-                  <div className="flex gap-4">
+                  <div className="grid grid-cols-1 md:flex gap-4">
                     <input type="text" placeholder="Name" className="py-3 px-5" />
                     <input type="text" placeholder="Surname" className="py-3 px-5"/>
                   </div>
-                  <div className="flex gap-4 py-2 ">  
+                  <div className="grid grid-cols-1 md:flex gap-4 py-2 ">  
                     <input type="text" placeholder="Email Address" className="py-3 px-5"/>
                     <input type="text" placeholder="Phone Number" className="py-3 px-5"/>
                   </div>
