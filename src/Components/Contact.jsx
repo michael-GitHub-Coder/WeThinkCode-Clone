@@ -40,7 +40,7 @@ const Contact = () => {
                   </select>
                   <textarea placeholder="How can we help?" rows="4" className="w-full px-3 py-2 border border-gray-300  focus:outline-none"/>
                   <div>
-                      <button className="mt-4 py-2 px-3 text-white bg-green-500 font-semibold hover:border-2 hover:border-green-600 hover:bg-white hover:text-green-500">Submit</button>
+                      <button className="mt-4 py-2 px-12 text-white bg-green-500 font-semibold hover:border-2 hover:border-green-600 hover:bg-white hover:text-green-500">Submit</button>
                   </div>
               </form>
             </div>
