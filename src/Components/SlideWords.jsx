@@ -24,8 +24,10 @@ const SlideWords = () => {
     <div className="slide-container">
         <Slide>
          {slideImages.map((slideImage, index)=> (
-            <div key={index} className="h-[200px]">
-              <img src={slideImage.url} alt="" />
+            <div key={index} className="h-[400px]">
+              <div className="flex justify-center">
+                    <img src={slideImage.url} alt="" className="h-20 w-20 mt-10"/>
+              </div>
             </div>
           ))} 
         </Slide>
