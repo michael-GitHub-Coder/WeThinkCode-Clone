@@ -9,18 +9,24 @@ const SlideWords = () => {
           caption: 'Slide 1'
         },
         {
-          url: 'https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80',
+          url: "https://wethinkcode.co.za/wp-content/uploads/2024/03/GK-Logo-400x400-1.png.webp",
           caption: 'Slide 2'
         },
         {
-          url: 'https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80',
+          url: "https://wethinkcode.co.za/wp-content/uploads/2024/03/b016d3_0c6f0c8522fe44d1addf676cb50bc056mv2.webp",
           caption: 'Slide 3'
         },
+        {
+            url: "https://wethinkcode.co.za/wp-content/uploads/2024/03/Yoco-review.png.webp",
+        },
+        {
+            url: "https://wethinkcode.co.za/wp-content/uploads/2024/03/Review.png.webp",
+        }
       ];
 
   return (
     <div>
-    <h1 className="text-3xl font-semibold text-stone-700 text-center">Join Managers Hiring Top Tech Talent</h1>
+    <h1 className="text-3xl font-semibold text-stone-700 text-center mt-10">Join Managers Hiring Top Tech Talent</h1>
     <div className="slide-container">
         <Slide>
          {slideImages.map((slideImage, index)=> (
