@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-slide .slick-prev,
+.custom-slide .slick-next {
+  font-size: 20px; /* Adjust the size of the arrows */
+  color: #fff; /* Change the color of the arrows */
+}
+
+.custom-slide .slick-prev {
+  left: 10px; /* Adjust the position of the left arrow */
+}
+
+.custom-slide .slick-next {
+  right: 10px; /* Adjust the position of the right arrow */
+}
