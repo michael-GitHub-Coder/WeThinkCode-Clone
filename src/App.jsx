@@ -2,6 +2,7 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 import './App.css'
 import MainLayout from './Layout/MainLayout'
 import HomePage from './Pages/HomePage'
+import AboutPage from './Pages/AboutPage'
 
 
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
     createRoutesFromElements(
       <Route path="/" element={<MainLayout />}>
         <Route index element={<HomePage />}/>
+        <Route path='/About' element={<AboutPage />}  />
       </Route>
     )
   )

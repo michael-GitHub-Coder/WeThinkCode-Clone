@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import logo from '../Images/logo.png';
 import { FaTimes, FaWhatsapp } from 'react-icons/fa';
 import { CiMenuBurger } from 'react-icons/ci';
-
+import { Link } from 'react-router-dom';
 const NavBar = () => {
 
   const Navmenu = [
@@ -39,15 +39,17 @@ const NavBar = () => {
           )}
           <div className="hidden lg:flex gap-4">
             {Navmenu.map((link) => (
-              <h1 key={link} className={`cursor-pointer hover:text-blue-500 ${activeLink === link ? 'text-blue-500' : ''}`} onClick={() => handleLinkClick(link)}>
-                {link}
-              </h1>
+              <Link to={`/${link}`}>
+                <h1 key={link} className={`cursor-pointer hover:text-blue-500 ${activeLink === link ? 'text-blue-500' : ''}`} onClick={() => handleLinkClick(link)}>
+                  {link}
+                </h1>
+              </Link>
             ))}
           </div>
         </div>
         {isOpen && (
           <div className="fixed top-20 left-0 right-0 bottom-70 text-center text-xl text-blue-500 bg-white z-50">
-            {Arr-p.map((link) => (
+            {Navmenu.map((link) => (
               <h1 key={link} className={`cursor-pointer py-1 hover:bg-gray-100 ${activeLink === link ? 'text-blue-500' : ''}`} onClick={() => handleLinkClick(link)}>
                 {link}
               </h1>
