@@ -1,8 +1,43 @@
 import React from 'react'
 import { Slide } from 'react-slideshow-image'
 import 'react-slideshow-image/dist/styles.css'
+import { useState,useEffect } from 'react'
+
 const SlideWords = () => {
 
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    const images = [
+        'image1.jpg',
+        'image2.jpg',
+        'image3.jpg', 
+        // Add more image URLs as needed
+      ];
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+          setCurrentIndex((prevIndex) =>
+            prevIndex === images.length - 1 ? 0 : prevIndex + 1
+          );
+        }, 3000); // Change image every 3 seconds
+    
+        return () => clearInterval(interval);
+      }, [images.length]);
+    
+      // Function to handle next image
+      const nextImage = () => {
+        setCurrentIndex((prevIndex) =>
+          prevIndex === images.length - 1 ? 0 : prevIndex + 1
+        );
+      };
+    
+      // Function to handle previous image
+      const prevImage = () => {
+        setCurrentIndex((prevIndex) =>
+          prevIndex === 0 ? images.length - 1 : prevIndex - 1
+        );
+      };
+    
     const slideImages = [
         {
           url: "https://wethinkcode.co.za/wp-content/uploads/2024/03/mOMENTUME.jpg.webp",
@@ -41,18 +76,18 @@ const SlideWords = () => {
         {/* partners */}
         <div className="bg-gray-100 h-[200px] mt-10">
             <h1 className="text-stone-700 text-3xl text-center py-5 font-semibold">Working With the Best Partners in South Africa & Globally</h1>
-            <div className="slide-container max-w-sm ">
-                <Slide>
-                {slideImages.map((slideImage, index)=> (
-                    <div key={index} className="h-20">
-                        <div className="flex justify-center">
-                            <img src={slideImage.url} alt="" className="h-20 w-20 mt-10"/>
-                        </div>
+            <div className="slideshow-container container mx-auto max-w-4xl">
+                <img
+                    src={images[currentIndex]}
+                    alt={`Slide ${currentIndex + 1}`}
+                    className="slideshow-image"
+                />
+                <div className="slideshow-controls">
+                    <button onClick={prevImage}>Previous</button>
+                    <button onClick={nextImage}>Next</button>
                 </div>
-                ))} 
-                </Slide>
-            </div>
-        </div> 
+                </div>
+            </div> 
         {/* partners testimonials */}
         <h1 className="text-3xl font-semibold text-stone-700 text-center mt-10">Join Managers Hiring Top Tech Talent</h1>
         <div className="slide-container">
