@@ -39,13 +39,7 @@ const NavBar = () => {
           )}
           <div className="hidden lg:flex gap-4">
             {Navmenu.map((link) => (
-              <h1
-                key={link}
-                className={`cursor-pointer hover:text-blue-500 ${
-                  activeLink === link ? 'text-blue-500' : ''
-                }`}
-                onClick={() => handleLinkClick(link)}
-              >
+              <h1 key={link} className={`cursor-pointer hover:text-blue-500 ${activeLink === link ? 'text-blue-500' : ''}`} onClick={() => handleLinkClick(link)}>
                 {link}
               </h1>
             ))}
