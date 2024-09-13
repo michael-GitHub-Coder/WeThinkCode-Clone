@@ -5,6 +5,7 @@ import { useState } from 'react';
 const Gray = () => {
 
     const [UpDown, setUpDown] = useState(true)
+    const [getID,setID] = useState("https://www.youtube.com/watch?v=s4VqbT8TaFY&t=5s")
 
     const links = [
         {
@@ -38,6 +39,8 @@ const Gray = () => {
             duration: "6:04",
         },
     ];
+
+    // console.log("getID"+getID)
   return (
     <div>
         <div className="bg-gray-100">
@@ -53,8 +56,7 @@ const Gray = () => {
         <div className="container mx-auto max-w-4xl grid grid-cols-1 md:flex gap-3 mt-10 px-4">
            <div className=" md:col-span-2">
                 <video width="600" controls>
-                    <source src="https://www.youtube.com/watch?v=s4VqbT8TaFY&t=5s" type="video/mp4" />
-                    Your browser does not support the video tag.
+                    <source src={getID} type="video/mp4" />
                 </video>
            </div>
            {/* Titles  */}
@@ -65,7 +67,7 @@ const Gray = () => {
             </div>
             <div className="hidden md:block">
                 {links.map((links) => (
-                    <div className="flex gap-6 hover:bg-gray-100">
+                    <div onClick={() => setID(links.url)} className="flex gap-6 hover:bg-gray-100 cursor-pointer">
                         <h1 className="text-sm py-2 text-red-400  hover:text-gray-400">{links.title.substring(0,25)}</h1>
                         <h1 className="mt-2">{links.duration}</h1>
                     </div>
@@ -74,7 +76,7 @@ const Gray = () => {
             <div className="md:hidden">
                 {links.map((links) => (
                     UpDown && 
-                    <div className="flex gap-6 hover:bg-gray-100">
+                    <div className="flex gap-6 hover:bg-gray-100 cursor-pointer">
                         <h1 className="text-sm py-2 text-red-400  hover:text-gray-400">{links.title.substring(0,25)}</h1>
                         <h1 className="mt-2">{links.duration}</h1>
                     </div>
