@@ -63,11 +63,20 @@ const Gray = () => {
                 <h1 className="font-stone-700 font-semibold">WeThinkCode_</h1>
                 <h1 onClick={()=> setUpDown(!UpDown)} className="flex gap-2">{links.length} Videos {UpDown ?  <BiSolidUpArrow className="md:hidden mt-1.5"/> : <BiSolidDownArrow className="md:hidden mt-1.5"/>}</h1>
             </div>
-            <div>
+            <div className="hidden md:block">
+                {links.map((links) => (
+                    <div className="flex gap-6">
+                        <h1 className="text-sm py-2 text-red-400 hover:bg-gray-100 hover:text-gray-400">{links.title.substring(0,25)}</h1>
+                        <h1 className="mt-2">{links.duration}</h1>
+                    </div>
+                ))}
+            </div>
+            <div className="md:hidden">
                 {links.map((links) => (
                     UpDown && 
-                    <div>
-                        <h1 className="text-sm py-2 text-red-400 hover:bg-gray-100 hover:text-gray-400">{links.title}</h1>
+                    <div className="flex gap-6">
+                        <h1 className="text-sm py-2 text-red-400 hover:bg-gray-100 hover:text-gray-400">{links.title.substring(0,25)}</h1>
+                        <h1 className="mt-2">{links.duration}</h1>
                     </div>
                 ))}
             </div>
