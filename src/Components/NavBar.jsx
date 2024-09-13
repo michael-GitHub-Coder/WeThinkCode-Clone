@@ -4,6 +4,15 @@ import { FaTimes, FaWhatsapp } from 'react-icons/fa';
 import { CiMenuBurger } from 'react-icons/ci';
 
 const NavBar = () => {
+
+  const Navmenu = [
+    'Home', 
+    'About',
+    'Partner',
+    'Enrol', 
+    'News', 
+    'Contact'
+  ];
   const [isOpen, setIsOpen] = useState(false);
   const [activeLink, setActiveLink] = useState('Home'); 
 
@@ -29,7 +38,7 @@ const NavBar = () => {
             </button>
           )}
           <div className="hidden lg:flex gap-4">
-            {['Home', 'About', 'Partner', 'Enrol', 'News', 'Contact'].map((link) => (
+            {Navmenu.map((link) => (
               <h1
                 key={link}
                 className={`cursor-pointer hover:text-blue-500 ${
@@ -44,7 +53,7 @@ const NavBar = () => {
         </div>
         {isOpen && (
           <div className="fixed top-20 left-0 right-0 bottom-70 text-center text-xl text-blue-500 bg-white z-50">
-            {['Home', 'About', 'Partner', 'Enrol', 'News', 'Contact'].map((link) => (
+            {Arr-p.map((link) => (
               <h1 key={link} className={`cursor-pointer py-1 hover:bg-gray-100 ${activeLink === link ? 'text-blue-500' : ''}`} onClick={() => handleLinkClick(link)}>
                 {link}
               </h1>
