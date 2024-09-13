@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import logo from '../Images/logo.png'
-import { FaWhatsapp } from 'react-icons/fa'
+import { FaTimes, FaWhatsapp } from 'react-icons/fa'
 import { FaBurger } from 'react-icons/fa6'
 import { CiMenuBurger } from 'react-icons/ci'
 
@@ -15,7 +15,10 @@ const NavBar = () => {
                 <img src={logo} alt="Logo Image"  className="h-[60px] w-[60px]"/>
             </div>
             <div className="flex md:hidden lg:flex gap-4">
-                <CiMenuBurger size={40} className="text-blue-500 md:flex lg:hidden" />
+                { isOpen ?
+                    <button onClick={() => setIsopen(!isOpen)}> <FaTimes  size={40} className="text-blue-500"/></button>
+                    : <button onClick={() => setIsopen(!isOpen)}><CiMenuBurger size={40} className="text-blue-500 md:flex lg:hidden" /></button>
+                }
                 <div className="hidden lg:flex gap-4">
                     <h1 className="cursor-pointer hover:text-blue-500">Home</h1>
                     <h1 className="cursor-pointer hover:text-blue-500">About</h1>
@@ -25,7 +28,17 @@ const NavBar = () => {
                     <h1 className="cursor-pointer hover:text-blue-500">Contact</h1>
                 </div>
             </div>
-
+            {
+                isOpen && 
+                <div className="fixed top-20 left-0 right-0 bottom-70 text-center text-xl text-blue-500 bg-white z-50">
+                    <h1 className="cursor-pointer py-1 hover:bg-gray-100">Home</h1>
+                    <h1 className="cursor-pointer py-1 hover:bg-gray-100">About</h1>
+                    <h1 className="cursor-pointer py-1 hover:bg-gray-100">Partner</h1>
+                    <h1 className="cursor-pointer py-1 hover:bg-gray-100">Enrol</h1>
+                    <h1 className="cursor-pointer py-1 hover:bg-gray-100">News</h1>
+                    <h1 className="cursor-pointer py-1 hover:bg-gray-100">Contact</h1>
+                </div>
+            }
 
             <div className="md:flex hidden gap-4 text-white">
                 <button className="bg-green-500 bg-opacity-100 py-1 px-8">Donate</button>
