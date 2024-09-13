@@ -1,6 +1,11 @@
 import React from 'react'
-
+import { BiSolidDownArrow } from "react-icons/bi";
+import { BiSolidUpArrow } from "react-icons/bi";
+import { useState } from 'react';
 const Gray = () => {
+
+    const [UpDown, setUpDown] = useState(true)
+
     const links = [
         {
             url:"https://www.youtube.com/watch?v=s4VqbT8TaFY&t=5s",
@@ -36,7 +41,7 @@ const Gray = () => {
   return (
     <div>
         <div className="bg-gray-100">
-            <div className="container mx-auto max-w-5xl text-center mt-40">
+            <div className="container mx-auto max-w-5xl text-center mt-40 px-4">
                 <p className="py-5">WeThinkCode_ was established in 2015 and launched its inaugural cohort in 2016 in Johannesburg, South Africa. It has since grown, extending its footprint to Cape Town (2018) and Durban (2021), and is now delivering its proven curriculum at public technical vocational education and training (TVET) colleges in South Africa.</p>
                 <p className="py-5">WeThinkCode_ is a registered non-profit company (NPC) and public benefit organisation (PBO) whose business model works across the youth development value chain to recruit youth with a high aptitude to code, train them rigorously over 16 months and place them into jobs as software developers within South Africa’s most reputable and innovative businesses.</p>
                 <p className="py-5">WeThinkCode_’s purpose is to shift Africa from consumption to the creation of tech.</p>
@@ -56,10 +61,11 @@ const Gray = () => {
           <div>
             <div className="flex gap-20">
                 <h1 className="font-stone-700 font-semibold">WeThinkCode_</h1>
-                <h1>{links.length} Videos</h1>
+                <h1 onClick={()=> setUpDown(!UpDown)} className="flex gap-2">{links.length} Videos {UpDown ?  <BiSolidUpArrow className="md:hidden mt-1.5"/> : <BiSolidDownArrow className="md:hidden mt-1.5"/>}</h1>
             </div>
             <div>
                 {links.map((links) => (
+                    UpDown && 
                     <div>
                         <h1 className="text-sm py-2 text-red-400 hover:bg-gray-100 hover:text-gray-400">{links.title}</h1>
                     </div>
