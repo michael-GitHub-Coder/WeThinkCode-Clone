@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <div>
         <div style={{backgroundImage: `url("https://wethinkcode.co.za/wp-content/uploads/2024/04/WeThinkCode_-Students.jpg.webp")`,
-        height:"500px",
+        height:"550px",
         backgroundSize: 'cover',
         backgroundPosition: '10% 10%',
         opacity: .9}}
