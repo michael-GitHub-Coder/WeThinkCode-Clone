@@ -29,7 +29,7 @@ const OurImpact = () => {
     return <div className="text-3xl font-bold mt-10 flex">{count}</div>;
   };
   return (
-    <div className="bg-blue-500 h-[400px] mt-40">
+    <div className="bg-blue-500 h-[400px] mt-10">
         <h1 className="text-white font-semibold text-3xl text-center pt-8">Our Impact</h1>
 
         <div className="container mx-auto max-w-4xl grid grid-cols-4">
