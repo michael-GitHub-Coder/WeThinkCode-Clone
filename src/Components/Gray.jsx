@@ -37,6 +37,14 @@ const Gray = () => {
             duration: "6:04",
         },
     ];
+    const getVideoId = (url) => {
+        const urlObj = new URL(url);
+        if (urlObj.hostname === 'youtu.be') {
+            return urlObj.pathname.substring(1);
+        }
+        return urlObj.searchParams.get('v');
+    };
+    
 
     return (
         <div>
@@ -53,12 +61,15 @@ const Gray = () => {
                 <div className="md:col-span-2 ">
                     {/* TODO: */}
                     <iframe
+                        width="100%"
                         height="340"
-                        src={`https://www.youtube.com/embed/${new URL(currentVideoUrl).searchParams.get('v')}`}
+                        src={`https://www.youtube.com/embed/${getVideoId(currentVideoUrl)}`}
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
-                    className="md:w-[600px]"></iframe>
+                        className="md:w-[600px]"
+                    />
+
                 </div>
                 {/* Titles */}
                 <div>
