@@ -41,7 +41,7 @@ const Gray = () => {
     return (
         <div>
             <div className="bg-gray-100">
-                <div className="container mx-auto max-w-5xl text-center mt-40 px-4">
+                <div className="container mx-auto max-w-5xl text-center px-4">
                     <p className="py-5">WeThinkCode_ was established in 2015 and launched its inaugural cohort in 2016 in Johannesburg, South Africa. It has since grown, extending its footprint to Cape Town (2018) and Durban (2021), and is now delivering its proven curriculum at public technical vocational education and training (TVET) colleges in South Africa.</p>
                     <p className="py-5">WeThinkCode_ is a registered non-profit company (NPC) and public benefit organisation (PBO) whose business model works across the youth development value chain to recruit youth with a high aptitude to code, train them rigorously over 16 months and place them into jobs as software developers within South Africa’s most reputable and innovative businesses.</p>
                     <p className="py-5">WeThinkCode_’s purpose is to shift Africa from consumption to the creation of tech.</p>
