@@ -5,6 +5,7 @@ import { CiMenuBurger } from 'react-icons/ci';
 import { Link } from 'react-router-dom';
 const NavBar = () => {
 
+  const [cont,setCont] = useState(false)
   const Navmenu = [
     'Home', 
     'About',
@@ -42,6 +43,7 @@ const NavBar = () => {
               <Link to={`/${link}`}>
                 <h1 key={link} className={`cursor-pointer hover:text-blue-500 ${activeLink === link ? 'text-blue-500' : ''}`} onClick={() => handleLinkClick(link)}>
                   {link}
+                  
                 </h1>
               </Link>
             ))}

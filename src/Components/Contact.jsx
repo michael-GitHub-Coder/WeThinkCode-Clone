@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { IoIosStar } from "react-icons/io";
 
 
-const Contact = ({contactt}) => {
+const Contact = () => {
   
   return (
     <div className="bg-gray-100 h-auto py-10">
