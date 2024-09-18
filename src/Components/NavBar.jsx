@@ -3,9 +3,11 @@ import logo from '../Images/logo.png';
 import { FaTimes, FaWhatsapp } from 'react-icons/fa';
 import { CiMenuBurger } from 'react-icons/ci';
 import { Link } from 'react-router-dom';
+
+
 const NavBar = () => {
 
-  const [cont,setCont] = useState(false)
+ 
   const Navmenu = [
     'Home', 
     'About',
@@ -21,6 +23,10 @@ const NavBar = () => {
     setActiveLink(link); 
     setIsOpen(false); 
   };
+
+
+  // link === "Partner" ? setCont(true);
+  // naviagte("/Partner", {state:{cont}});
 
   return (
     <div className="bg-white w-full px-5 md:px-0 shadow-md fixed z-50 top-0">
@@ -40,10 +46,9 @@ const NavBar = () => {
           )}
           <div className="hidden lg:flex gap-4">
             {Navmenu.map((link) => (
-              <Link to={`/${link}`}>
-                <h1 key={link} className={`cursor-pointer hover:text-blue-500 ${activeLink === link ? 'text-blue-500' : ''}`} onClick={() => handleLinkClick(link)}>
+              <Link key={link} to={link === "Home" ? "/" : `/${link}`} className="cursor-pointer hover:text-blue-500">
+                <h1 className={activeLink === link ? 'text-blue-500' : ''} onClick={() => handleLinkClick(link)}>
                   {link}
-                  
                 </h1>
               </Link>
             ))}
@@ -52,9 +57,11 @@ const NavBar = () => {
         {isOpen && (
           <div className="fixed top-20 left-0 right-0 bottom-70 text-center text-xl text-blue-500 bg-white z-50">
             {Navmenu.map((link) => (
-              <h1 key={link} className={`cursor-pointer py-1 hover:bg-gray-100 ${activeLink === link ? 'text-blue-500' : ''}`} onClick={() => handleLinkClick(link)}>
-                {link}
-              </h1>
+              <Link key={link} to={link === "Home" ? "/" : `/${link}`} className="cursor-pointer hover:text-blue-500">
+                <h1 className={activeLink === link ? 'text-gray-500' : ''} onClick={() => handleLinkClick(link)}>
+                  {link}
+                </h1>
+              </Link>
             ))}
           </div>
         )}

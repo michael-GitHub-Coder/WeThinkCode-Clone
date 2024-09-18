@@ -11,7 +11,7 @@ const Hero = () => {
         >
             <div className="grid grid-cols-1">
                 <h1 className="text-center py-60 text-4xl font-semibold text-white">Training Africa's Top Tech Talent</h1>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:flex justify-center container mx-auto max-w-sm gap-4 lg:hidden -mt-24 md:block lg:-mt-2 text-white">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:flex justify-center container mx-auto max-w-sm gap-4 lg:hidden -mt-32 mb-8  md:block lg:-mt-2 text-white">
                     <button className="bg-green-500 bg-opacity-100 py-2 px-8 md:mr-4">Donate</button>
                     <button className="bg-blue-500 py-2 px-7">Apply Now</button>
                 </div>

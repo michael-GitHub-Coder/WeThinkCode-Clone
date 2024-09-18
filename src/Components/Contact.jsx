@@ -40,7 +40,7 @@ const Contact = () => {
                       <option value="option3">Marketing Enquiry</option>
                       <option value="option3">Applications</option>
                   </select>
-                  { contactt && 
+                  { 
                       <div className="grid grid-cols-1 md:flex gap-4 pb-2">
                         <input type="text" placeholder="Company Name/Organisation" className="py-3 px-5" />
                         <input type="text" placeholder="Are you the decision-maker?" className="py-3 px-5"/>
