@@ -46,13 +46,15 @@ const Footer = () => {
           <div className="text-white text-center md:py-10">
              <div className="flex justify-center">
               <img src="https://wethinkcode.co.za/wp-content/uploads/2022/10/qrcode_whatsapp.png.webp" alt="Scan to WhatsApp" 
-                className="h-[140px] w-[140px]" />
+                className="h-[140px] w-[200px]" />
              </div>
               <p className="italic text-sm">Scan to WhatsApp</p>
-              <div className="grid grid-cols-3 gap-2">
+              <div className="flex justify-center  gap-4 mb-4">
                   <FaFacebook size={17} />
                   <FaTwitter  size={17}/>
                   <FaYoutube size={17} />
+                </div>
+              <div className="flex justify-center gap-4 ">
                   <FaInstagram size={17} />
                   <FaLinkedin size={17} />
                   <FaTiktok size={17}/>
