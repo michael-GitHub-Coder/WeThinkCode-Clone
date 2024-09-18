@@ -1,0 +1,34 @@
+{
+    "slideImages" :[
+        {
+            "url": "https://wethinkcode.co.za/wp-content/uploads/2024/01/wethinkcode-chief-executive-officer-nyari-samushonga.webp",
+            "name": "Nyari Samushonga",
+            "pos": "Chief Executive Officer"
+        },
+        {
+            "url": "https://wethinkcode.co.za/wp-content/uploads/2024/01/wethinkcode-chief-commercial-officer-sethu-komani.webp",
+            "name": "Sethu Komani",
+            "pos": "Chief Commercial Officer"
+        },
+        {
+            "url": "https://wethinkcode.co.za/wp-content/uploads/2024/01/wethinkcode-head-of-curriculum-technology-herman-lintvelt.webp",
+            "name": "Herman Lintvelt",
+            "pos": "Chief Technology Officer"
+        },
+        {
+            "url": "https://wethinkcode.co.za/wp-content/uploads/2024/01/wethinkcode-head-of-finance-tinashe-chigodo.webp",
+            "name": "Tinashe Chigodo",
+            "pos": "Head of Finance"
+        },
+        {
+            "url": "https://wethinkcode.co.za/wp-content/uploads/2024/01/wethinkcode-director-of-public-partnerships-ruvimbo-gwatirisa.webp",
+            "name": "Ruvimbo Gwatirisa",
+            "pos": "Director of Public Partnerships"
+        },
+        {
+            "url": "https://wethinkcode.co.za/wp-content/uploads/2024/01/we-think-code-head-of-placements-kele-motlhamme.webp",
+            "name": "Kelebogile Motlhamme",
+            "pos": "Director of Operations"
+        }
+    ]
+}
