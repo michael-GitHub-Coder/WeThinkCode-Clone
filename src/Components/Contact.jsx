@@ -1,8 +1,10 @@
-import React from 'react'
+import { Container } from 'postcss';
+import React, { useState } from 'react'
 import { IoIosStar } from "react-icons/io";
 
 
-const Contact = () => {
+const Contact = ({contactt}) => {
+  
   return (
     <div className="bg-gray-100 h-auto py-10">
         <div className="grid grid-cols-1 md:grid-cols-2 container mx-auto max-w-4xl gap-5 px-4">
@@ -38,6 +40,12 @@ const Contact = () => {
                       <option value="option3">Marketing Enquiry</option>
                       <option value="option3">Applications</option>
                   </select>
+                  { contactt && 
+                      <div className="grid grid-cols-1 md:flex gap-4 pb-2">
+                        <input type="text" placeholder="Company Name/Organisation" className="py-3 px-5" />
+                        <input type="text" placeholder="Are you the decision-maker?" className="py-3 px-5"/>
+                      </div> 
+                  }
                   <textarea placeholder="How can we help?" rows="4" className="w-full px-3 py-2 border border-gray-300  focus:outline-none"/>
                   <div>
                       <button className="mt-4 py-2 px-12 text-white bg-green-500 font-semibold hover:border-2 hover:border-green-600 hover:bg-white hover:text-green-500">Submit</button>

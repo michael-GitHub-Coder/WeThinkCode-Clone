@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from '../Components/Header'
+import ExecutiveSlide from '../Components/ExecutiveSlide'
 
 const PartnersPage = () => {
   return (
@@ -44,6 +45,7 @@ const PartnersPage = () => {
                 </div>
             </div>
         </div>
+        <ExecutiveSlide />
     </div>
   )
 }
