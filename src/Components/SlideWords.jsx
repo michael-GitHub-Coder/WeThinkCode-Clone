@@ -7,37 +7,7 @@ const SlideWords = () => {
 
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    const images = [
-        'image1.jpg',
-        'image2.jpg',
-        'image3.jpg', 
-        // Add more image URLs as needed
-      ];
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-          setCurrentIndex((prevIndex) =>
-            prevIndex === images.length - 1 ? 0 : prevIndex + 1
-          );
-        }, 3000); // Change image every 3 seconds
-    
-        return () => clearInterval(interval);
-      }, [images.length]);
-    
-      // Function to handle next image
-      const nextImage = () => {
-        setCurrentIndex((prevIndex) =>
-          prevIndex === images.length - 1 ? 0 : prevIndex + 1
-        );
-      };
-    
-      // Function to handle previous image
-      const prevImage = () => {
-        setCurrentIndex((prevIndex) =>
-          prevIndex === 0 ? images.length - 1 : prevIndex - 1
-        );
-      };
-    
+  
     const slideImages = [
         {
           url: "https://wethinkcode.co.za/wp-content/uploads/2024/03/mOMENTUME.jpg.webp",
@@ -71,6 +41,29 @@ const SlideWords = () => {
         }
       ];
 
+      useEffect(() => {
+        const interval = setInterval(() => {
+          setCurrentIndex((prevIndex) =>
+            prevIndex === slideImages.length - 1 ? 0 : prevIndex + 1
+          );
+        }, 3000); // Change image every 3 seconds
+    
+        return () => clearInterval(interval);
+      }, [slideImages.length]);
+    
+      // Function to handle next image
+      const nextImage = () => {
+        setCurrentIndex((prevIndex) =>
+          prevIndex === slideImages.length - 1 ? 0 : prevIndex + 1
+        );
+      };
+    
+      // Function to handle previous image
+      const prevImage = () => {
+        setCurrentIndex((prevIndex) =>
+          prevIndex === 0 ? slideImages.length - 1 : prevIndex - 1
+        );
+      };
   return (
     <div>
         {/* partners testimonials */}
