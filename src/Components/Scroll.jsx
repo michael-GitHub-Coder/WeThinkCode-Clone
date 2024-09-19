@@ -37,7 +37,7 @@ const Scroll = () => {
 
   return (
   
-    <div className="grid grid-cols-1 md:grid-cols-2 container mx-auto max-w-4xl mt-10 px-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 container mx-auto max-w-4xl my-10 px-4">
         {/* card 1 */}
         <div className="mt-20">
             <h1 className="text-stone-600 text-3xl font-semibold py-2 pb-5">Bridging the Tech Skills gap</h1>

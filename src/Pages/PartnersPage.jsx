@@ -4,7 +4,7 @@ import ExecutiveSlide from '../Components/ExecutiveSlide'
 import data from "../images.json"
 import PartnershipTeam from '../Components/PartnershipTeam'
 import Sponsergrid from '../Components/Sponsergrid'
-
+import PartnerSlide from '../Components/PartnerSlide'
 const PartnersPage = () => {
   return (
     <div>
@@ -12,7 +12,7 @@ const PartnersPage = () => {
         <Sponsergrid />
         <ExecutiveSlide />
         <PartnershipTeam />
-
+        <PartnerSlide title="Meet our Corporate Partners" subtitle="We collaborate with our corporate partners to ensure our students gain the relevant digital and workplace skills as well as a clear pathway to employment upon graduating from WeThinkCode_."/>
     </div>
   )
 }

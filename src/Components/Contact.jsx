@@ -6,7 +6,7 @@ import { IoIosStar } from "react-icons/io";
 const Contact = () => {
   
   return (
-    <div className="bg-gray-100 h-auto py-10">
+    <div className="bg-gray-100 h-auto mt-10 py-10">
         <div className="grid grid-cols-1 md:grid-cols-2 container mx-auto max-w-4xl gap-5 px-4">
             <div>
               <h1 className="font-semibold text-2xl py-4">Developing the finest talent in Africa</h1>

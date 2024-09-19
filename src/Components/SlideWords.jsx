@@ -73,21 +73,6 @@ const SlideWords = () => {
 
   return (
     <div>
-        {/* partners */}
-        <div className="bg-gray-100 h-[200px] mt-10">
-            <h1 className="text-stone-700 text-3xl text-center py-5 font-semibold">Working With the Best Partners in South Africa & Globally</h1>
-            <div className="slideshow-container container mx-auto max-w-4xl">
-                <img
-                    src={images[currentIndex]}
-                    alt={`Slide ${currentIndex + 1}`}
-                    className="slideshow-image"
-                />
-                <div className="slideshow-controls">
-                    <button onClick={prevImage}>Previous</button>
-                    <button onClick={nextImage}>Next</button>
-                </div>
-                </div>
-            </div> 
         {/* partners testimonials */}
         <h1 className="text-3xl font-semibold text-stone-700 text-center mt-10">Join Managers Hiring Top Tech Talent</h1>
         <div className="slide-container">
