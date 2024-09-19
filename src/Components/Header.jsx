@@ -1,12 +1,12 @@
 import React from 'react'
 
-const Header = ({image,title}) => {
+const Header = ({image,title,pos}) => {
   return (
     <div>
         <div style={{backgroundImage: `url(${image})`,
         height:"400px",
-        backgroundSize: 'cover',
-        backgroundPosition: '10% 10%',
+        backgroundSize: "100%",
+        backgroundPosition: pos,
         opacity: .9}}
         >
             <div className="grid grid-cols-1">

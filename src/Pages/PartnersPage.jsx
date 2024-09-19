@@ -8,7 +8,7 @@ import PartnerSlide from '../Components/PartnerSlide'
 const PartnersPage = () => {
   return (
     <div>
-        <Header image={"https://wethinkcode.co.za/wp-content/uploads/2024/04/WeThinkCode_-Students.jpg.webp"} title="Become a Partner"/>
+        <Header image={"https://wethinkcode.co.za/wp-content/uploads/2024/03/Partner-hero-1.webp"} title="Become a Partner" pos="100% 50%"/>
         <Sponsergrid />
         <ExecutiveSlide />
         <PartnershipTeam />
