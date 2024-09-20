@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import logo from '../Images/logo.png';
 import { FaTimes, FaWhatsapp } from 'react-icons/fa';
 import { CiMenuBurger } from 'react-icons/ci';
@@ -23,6 +23,7 @@ const NavBar = () => {
     setActiveLink(link); 
     setIsOpen(false); 
   };
+
 
 
   // link === "Partner" ? setCont(true);
