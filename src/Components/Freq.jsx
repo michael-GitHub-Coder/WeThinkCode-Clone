@@ -10,8 +10,8 @@ const Freq = () => {
 
   return (
     <div className="bg-gray-100 pb-10"> 
-        <h1 className="text-center font-semibold text-3xl">Frequently asked questions</h1>
-        <div className=" container mx-auto max-w-2xl ">
+        <h1 className="text-center font-semibold text-3xl px-5 pt-5">Frequently asked questions</h1>
+        <div className=" container mx-auto max-w-2xl px-5 mt-5">
             <div className="flex justify-between"  onClick={()=> setIsOpen1(!isOpen1)}>
                 <h1 className="font-semibold ">Who can apply?</h1>
                 {isOpen1 ?  <FaCircleMinus color="green" size={20}/> : <IoAddCircle color="green" size={20}/> }
