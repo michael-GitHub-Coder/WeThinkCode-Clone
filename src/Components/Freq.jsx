@@ -31,8 +31,8 @@ const Freq = () => {
            </div>
             {/* feofe */}
 
-            <div className="flex justify-between"  onClick={()=> setIsOpen2(!isOpen2)}>
-                <h1 className="font-semibold pt-4">How do i apply?</h1>
+            <div className="flex justify-between pt-4"  onClick={()=> setIsOpen2(!isOpen2)}>
+                <h1 className="font-semibold ">How do i apply?</h1>
                 {isOpen2 ?  <FaCircleMinus color="green" size={20}/> : <IoAddCircle color="green" size={20}/> }
             </div>
            <div className="border-b-2 border-gray-200 pt-4">
@@ -45,8 +45,8 @@ const Freq = () => {
                     }
            </div>
             {/* dwdws */}
-            <div className="flex justify-between"  onClick={()=> setIsOpen3(!isOpen3)}>
-                <h1 className="font-semibold pt-4">What is a selection boot camp?</h1>
+            <div className="flex justify-between pt-4"  onClick={()=> setIsOpen3(!isOpen3)}>
+                <h1 className="font-semibold ">What is a selection boot camp?</h1>
                 {isOpen3 ?  <FaCircleMinus color="green" size={20}/> : <IoAddCircle color="green" size={20}/> }
             </div>
            <div className="border-b-2 border-gray-200 pt-4">
@@ -63,8 +63,8 @@ const Freq = () => {
                     }
            </div>
             {/* efefef */}
-            <div className="flex justify-between"  onClick={()=> setIsOpen4(!isOpen4)}>
-                <h1 className="font-semibold pt-4">How does boot camp work?</h1>
+            <div className="flex justify-between pt-4"  onClick={()=> setIsOpen4(!isOpen4)}>
+                <h1 className="font-semibold ">How does boot camp work?</h1>
                 {isOpen4 ?  <FaCircleMinus color="green" size={20}/> : <IoAddCircle color="green" size={20}/> }
             </div>
             <div className="border-b-2 border-gray-200 pt-4">
