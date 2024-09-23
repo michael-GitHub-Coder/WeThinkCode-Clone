@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../Components/Header'
 import { useState } from 'react'
 import { BiSolidDownArrow, BiSolidUpArrow } from "react-icons/bi";
+import Freq from '../Components/Freq';
 
 const EnrolPage = () => {
 
@@ -91,7 +92,8 @@ const EnrolPage = () => {
                         ))}
                     </div>
                 </div>
-            </div>
+      </div>
+      <Freq />
     </div>
   )
 }
