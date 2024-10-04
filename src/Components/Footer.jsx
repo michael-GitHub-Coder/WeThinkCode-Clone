@@ -7,9 +7,9 @@ import { TfiEmail } from "react-icons/tfi";
 const Footer = () => {
   return (
     <div className="bg-blue-500 pb-4">
-        <div className="container mx-auto max-w-5xl grid grid-cols-1 md:flex md:gap-20">
+        <div className="container mx-auto max-w-5xl grid grid-cols-1  md:flex md:gap-20">
           {/* JHB */}
-            <div className="text-white text-center md:py-10">
+            <div className="text-white text-center mb-5 md:py-10">
               <div className="text-white flex justify-center">
                 <IoLocationOutline size={40}/>
               </div>
@@ -17,7 +17,7 @@ const Footer = () => {
               <p className="text-[13px]">132 Jan Smuts Avenue Parkwood, Johannesburg,<br></br> 2193</p>
             </div>
           {/* CPT */}
-          <div className="text-white text-center md:py-10">
+          <div className="text-white mb-5 text-center md:py-10">
               <div className="text-white flex justify-center">
               <IoLocationOutline size={40}/>
               </div>
@@ -26,7 +26,7 @@ const Footer = () => {
               Cape Town, 7915</p>
             </div>
           {/* DBN */}
-          <div className="text-white text-center md:py-10">
+          <div className="text-white  mb-5 text-center md:py-10">
               <div className="text-white flex justify-center">
               <IoLocationOutline size={40}/>
               </div>
@@ -35,7 +35,7 @@ const Footer = () => {
               8th Floor Durban Club Pl,<br></br> Durban Central, 4001</p>
             </div>
           {/* mail */}
-          <div className="text-white text-center md:py-10">
+          <div className="text-white mb-5 text-center md:py-10">
               <div className="text-white flex justify-center">
               <TfiEmail size={40}/>
               </div>
@@ -43,7 +43,7 @@ const Footer = () => {
               <p className="text-sm">info@wethinkcode.co.za</p>
           </div>
           {/* Scan to whatApp */}
-          <div className="text-white text-center md:py-10">
+          <div className="text-white mb-5 text-center md:py-10">
              <div className="flex justify-center">
               <img src="https://wethinkcode.co.za/wp-content/uploads/2022/10/qrcode_whatsapp.png.webp" alt="Scan to WhatsApp" 
                 className="h-[140px] w-[200px]" />
