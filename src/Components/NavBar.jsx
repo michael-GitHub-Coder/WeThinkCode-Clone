@@ -38,14 +38,14 @@ const NavBar = () => {
         <div className="flex md:hidden lg:flex gap-4">
           {isOpen ? (
             <button onClick={() => setIsOpen(!isOpen)}>
-              <FaTimes size={40} className="text-blue-500" />
+              <FaTimes size={40} className="text-blue-500 mr-4 " />
             </button>
           ) : (
             <button onClick={() => setIsOpen(!isOpen)}>
-              <CiMenuBurger size={40} className="text-blue-500 md:flex lg:hidden" />
+              <CiMenuBurger size={40} className="text-blue-500 mr-4  md:flex lg:hidden" />
             </button>
           )}
-          <div className="hidden lg:flex gap-4">
+          <div className="hidden lg:flex gap-8 md:gap-4">
             {Navmenu.map((link) => (
               <Link id="12" key={link} to={link === "Home" ? "/" : `/${link}`} className="cursor-pointer hover:text-blue-500">
                 <h1 className={activeLink === link ? 'text-blue-500' : ''} onClick={() => handleLinkClick(link)}>
