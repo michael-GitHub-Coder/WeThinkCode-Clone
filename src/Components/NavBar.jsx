@@ -31,7 +31,7 @@ const NavBar = () => {
 
   return (
     <div className="bg-white w-full px-5 md:px-0 shadow-md fixed z-50 top-0">
-      <div className="container mx-auto max-w-5xl flex justify-between items-center py-5">
+      <div className="container mx-auto max-w-5xl md:px-12 flex justify-between items-center py-5">
         <div>
           <img src={logo} alt="Logo Image" className="h-[60px] w-[60px]" />
         </div>
@@ -67,7 +67,7 @@ const NavBar = () => {
           </div>
         )}
 
-        <div className="md:flex hidden gap-4 text-white">
+        <div className="md:flex  hidden gap-4 text-white">
           <button className="bg-green-500 bg-opacity-100 py-1 px-8">Donate</button>
           <button className="bg-blue-500 py-1 px-7">Apply Now</button>
           <FaWhatsapp size={30} className="cursor-pointer text-blue-500 hover:text-green-500" />
