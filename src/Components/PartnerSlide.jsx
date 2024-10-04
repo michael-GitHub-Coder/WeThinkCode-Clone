@@ -47,13 +47,15 @@ const PartnerSlide = ({title,subtitle,bg_color}) => {
   return (
    <div className={` ${bg_color}`}>
         <div className="container mx-auto max-w-4xl py-10">
-            <h1 className="text-stone-700 text-4xl text-center font-semibold py-5">{title}</h1>
+            <h1 className="text-stone-700 text-4xl text-center font-semibold py-5 px-4">{title}</h1>
             <p className="text-stone-500 text-center pb-5">{subtitle}</p>
             <div className="slider-container py-5">
                 <Slider {...settings}>
                     {data.partners.map((slide, index) => (
                         <div key={index} className="px-4">
-                            <img src={slide.url} className="w-20 h-20" alt={slide.name} />
+                            <div className="flex justify-center">
+                                <img src={slide.url} className="w-20 h-20" alt={slide.name} />
+                            </div>
                             <h1 className="text-sm text-blue-500 text-center">{slide.name}</h1>
                             <h1 className="text-sm text-center">{slide.pos}</h1>
                         </div>
