@@ -7,7 +7,7 @@ import { TfiEmail } from "react-icons/tfi";
 const Footer = () => {
   return (
     <div className="bg-blue-500 pb-4">
-        <div className="container mx-auto max-w-5xl grid grid-cols-1  md:flex md:gap-20">
+        <div className="container mx-auto max-w-5xl grid grid-cols-1  md:flex md:px-5 lg:gap-20">
           {/* JHB */}
             <div className="text-white text-center mb-5 md:py-10">
               <div className="text-white flex justify-center">
@@ -43,7 +43,7 @@ const Footer = () => {
               <p className="text-sm">info@wethinkcode.co.za</p>
           </div>
           {/* Scan to whatApp */}
-          <div className="text-white mb-5 text-center md:py-10">
+          <div className="text-white mb-5 text-center md:py-10 md:pr-20">
              <div className="flex justify-center">
               <img src="https://wethinkcode.co.za/wp-content/uploads/2022/10/qrcode_whatsapp.png.webp" alt="Scan to WhatsApp" 
                 className="h-[140px] w-[200px]" />
