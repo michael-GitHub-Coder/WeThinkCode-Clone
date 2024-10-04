@@ -43,7 +43,7 @@ const Footer = () => {
               <p className="text-sm">info@wethinkcode.co.za</p>
           </div>
           {/* Scan to whatApp */}
-          <div className="text-white mb-5 text-center md:py-10 md:pr-20">
+          <div className="text-white mb-5 text-center md:py-10 md:pr-20 lg:pr-0">
              <div className="flex justify-center">
               <img src="https://wethinkcode.co.za/wp-content/uploads/2022/10/qrcode_whatsapp.png.webp" alt="Scan to WhatsApp" 
                 className="h-[140px] w-[200px]" />
